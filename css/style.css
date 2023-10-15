@@ -1,0 +1,60 @@
+body {
+    background-color: beige;
+}
+
+.heading {
+    color: rgb(148, 32, 32);
+    font-family: 'Pixelify Sans', sans-serif;
+    text-align: center;
+    position: relative; 
+    animation: heading;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes heading {
+    0% {top: -250px}
+    100% {top: 50px;}
+}
+
+.ingredients {
+    color: rgb(187, 136, 41);
+    border: 1px solid rgb(19, 13, 13);
+    width: 20%;
+    text-align: center;
+    position: relative;
+    animation: ingredients;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes ingredients {
+    0% {left: -1000px;}
+    85% {left: 50px;}
+    100% {left: 0;}
+}
+.instructions {
+    opacity: 0;
+    color: rgb(160, 133, 82);
+    font-family: 'Merriweather', serif;
+    animation: instructions;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+
+
+}
+
+@keyframes instructions {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    
+}
+
+
+img {
+    width: 250px;
+    border-radius: 75%;
+    
+}
